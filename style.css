@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     outline: none;
+    height: 100%;
 }
 /*nav*/
 .navbar-brand {
@@ -246,7 +247,7 @@ span {
     }
     .capa {
         text-align: center;
-        height: 668px;
+        height: 100%;
         width: 100%;
         }
     .text-effect{
