@@ -1,0 +1,318 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+/*nav*/
+.navbar-brand {
+    color: green;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+.navbar-nav {
+    margin-left: 850px;
+}
+
+.nav-link {
+    margin-left: 15px;
+    font-size: 18px;
+}
+.navbarr-brand {
+    margin-left: 50px;
+}
+
+
+.navbar-nav .nav-link {
+    color: green;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+.navbarr {
+    background-color: #2b2c2c;
+}
+span {
+    color: white;
+}
+
+
+/*capa*/
+.btn1 {
+    border: 2px solid green;
+    background: green;
+    color: white;
+    margin-top: 10px;
+    border-radius: 30px;
+    margin: 20px;
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+}
+
+.btn-group-lg>.btn, .btn-lg .btn1{
+    border: 2px solid green;
+    background: green;
+    color: white;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+
+
+.btn2 {
+    border: 2px solid white;
+    color: white;
+    margin-top: 10px;
+    border-radius: 30px;
+    margin: 20px;
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+}
+
+.btn1:hover {
+    border: 2px solid white;
+    color: white;
+    background: none;
+    transition: 0.3s;
+}
+    
+
+
+.btn2:hover {
+    border: 2px solid green;
+    background: green;
+    color: white;
+    transition: 0.3s;
+}
+.capa {
+    text-align: center;
+    background: url(assets/background-capa.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 650px;
+    width: auto;
+}
+
+
+.capa h1 {
+    color: white;
+    font-size: 60px;
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+}
+
+/*sobre*/
+.text-sobre {
+    margin-top: 10%;
+}
+
+.text-sobre h2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.text-sobre p{
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.sobre {
+    background-color: #303131;
+}
+
+/*servicos*/
+.servico {
+    background: url(assets/background-servico.jpg);
+}
+
+.servico h1 {
+    color: white;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.servico h2 {
+    color: black;
+    margin-top: 10px;
+}
+
+
+.card {
+    border: 2px solid white;
+    height: 400px;
+    width: 300px;
+    border-radius: 30px;
+    margin: 50px;
+    background: rgb(68, 206, 50);
+    transition: 0.5s;
+}
+
+.servico img {
+    width: 300px;
+    text-align: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;}
+
+.card-image1 {
+    margin-right: 0;
+}
+
+/*contato*/
+.contato {
+    background-color: #303131;
+}
+
+.contato-text {
+    margin-top: 20px;
+}
+
+.contato h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.contato-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 40px;
+    background: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contato-button:hover {
+    border: 2px solid green;
+    color: green;
+    transition: 0.4s;
+    background: none;
+
+   
+}
+
+/*rodape*/
+    .rodape p{
+        color: black;
+        margin-top: 20px;
+    }
+
+    .rodape a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    .rodape a:hover {
+        color: green;
+        transition: 0.3s;
+    }
+/*efeito maquina de escrever */
+.text-effect:after {
+        content: '|';
+        margin-left: 5px;
+        opacity: 1;
+        animation: pisca .7s infinite;
+       }
+@keyframes pisca{
+        0%, 100%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 0;
+        }
+    }
+
+
+/*mediaqueries*/
+@media screen and (max-width: 767px) {
+    body {
+        overflow-x: hidden;
+    }
+    .capa {
+        text-align: center;
+        height: 668px;
+        width: 100%;
+        }
+    .text-effect{
+        margin-bottom: 40px;
+        font-size: 100px;
+    }
+    .capa a {
+        text-align: center;
+    }
+
+    h1 {
+       text-align: center;
+        
+    }
+    .capa h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .img-sobre {
+        width: 90%;
+        align-items: center;
+        margin-left: 18px;
+    }
+    .nav-toggle {
+        color: white;
+        border: 1px solid white;
+    }
+    span.toggle {
+        background: white;
+        width: 16px;
+        height: 1px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nav-toggle button {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 80px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    h1 {
+    font-size: 100px;
+    }
+}
+    
+
+nav {
+    background-color: #2b2c2c;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: green;
+    transition: 0.5s;
+}
